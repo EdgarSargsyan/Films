@@ -1,0 +1,11 @@
+<% layout('layout') -%>
+
+<div class="container">
+	<% movie.forEach((eachMovie) => {%>
+	<div class="movies">
+		<img  alt="Poster"  src=<%= eachMovie.Poster %>  > <br />
+		<a href="/film/<%= eachMovie.Title %> ">More</a>
+	</div>
+	<% }); %>
+
+</div>

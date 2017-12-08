@@ -1,0 +1,15 @@
+<% layout('layout') -%>
+
+<div class="container">
+	<div class="movie">
+		<div>
+			<img  alt="Poster" align="left"  src=<%= movie.Poster %>  > 
+				<% for(let i in movie){if(i === 'Poster'){
+					continue } %>
+					<p class="more" ><span><%= i +  ":" %></span><%= movie[i] %></p>
+				<% }; %>
+		</div>
+		<a href='/' >Back</a>
+	</div>
+</div>
+
